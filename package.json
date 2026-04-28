@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "test:gui": "playwright test tests/gui_interaction.spec.js --browser=chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-crypto-toolkit"
+version = "0.8.0"
+description = "Demonstration toolkit for QCH-KEM and DLHP post-quantum protocol mechanisms."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Daxu" }]
+license = { text = "Proprietary" }
+
+[project.scripts]
+qcrypto = "qcrypto_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["qcrypto_toolkit*"]
